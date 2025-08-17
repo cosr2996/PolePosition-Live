@@ -1,21 +1,20 @@
 import { useF1 } from "../hooks/useF1";
 import { StadingsCard } from "./StadingsCard";
 
-export const ConstructorsChampionship = () => {
+export const StadingsConstructors = () => {
   const { ConstructorsStandings } = useF1();
   return (
     <div>
-      <h1 className="text-4xl font-bold pb-5 ">Constructors Championship</h1>
-      {ConstructorsStandings.map((constructor, index) =>
-        index < 5 ? (
+      <div>
+        {ConstructorsStandings.map((constructor) => (
           <StadingsCard
             position={constructor.position}
             team={constructor.team.teamName}
             points={constructor.points}
             img={`/teams/${constructor.teamId}.webp`}
           />
-        ) : null
-      )}
+        ))}
+      </div>
     </div>
   );
 };

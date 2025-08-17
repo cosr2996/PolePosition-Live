@@ -9,7 +9,7 @@ type StadingsCardProps ={
 
 export const StadingsCard = ({position,name,team,points,img}:StadingsCardProps) => {
   return (
-    <div className="border-2 bg-[#F5F5F5] flex items-center w-150 gap-5 p-2 rounded-2xl m-3 justify-around h-25">
+    <div className="border-b-2 bg-[#F5F5F5] flex items-center w-150 gap-5 p-2  m-3 justify-around h-25">
 
       <div className="flex items-center gap-5">
         <p className="text-5xl font-bold">#{position}</p>

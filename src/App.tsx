@@ -3,6 +3,8 @@ import { DriversChampionship } from "./components/DriversChampionship";
 import { Footer } from "./components/Footer";
 import { NavBar } from "./components/NavBar";
 import { NextRace } from "./components/NextRace";
+import { StadingsConstructors } from "./components/StadingsConstructors";
+import { StadingsDrivers } from "./components/StadingsDrivers";
 import { useF1 } from "./hooks/useF1";
 
 function App() {
@@ -10,7 +12,7 @@ function App() {
   console.log(driverStandings);
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#1C1C1C]">
+    <div className="flex flex-col min-h-screen bg-[#F5F5F5]">
       <NavBar />
 
       <main className="flex-grow">
@@ -24,6 +26,9 @@ function App() {
         </div>
       </main>
 
+
+      <StadingsDrivers/>
+      <StadingsConstructors/>
       <Footer />
     </div>
   );

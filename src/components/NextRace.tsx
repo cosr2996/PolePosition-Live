@@ -2,7 +2,7 @@
 
 export const NextRace = () => {
   return (
-    <div className=" bg-[#F5F5F5] border-2   h-40 m-5 p-5 px-20 items-center flex rounded-2xl justify-between">
+    <div className=" shadow-xl    h-40 m-5 p-5 px-20 items-center flex rounded-2xl justify-between">
       <h1 className="text-5xl font-bold">Next Race ...</h1>
 
       <div className="flex gap-5">
